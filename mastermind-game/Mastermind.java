@@ -2,6 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 class MasterMind {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         
         System.out.println("Wellcome to MasterMind!");
@@ -35,7 +36,7 @@ class MasterMind {
                         throw new NumberFormatException();
                     }
                 }
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 System.out.println("An error occurred. Enter numbers from 1 to " + maxDigit);
             }
 
