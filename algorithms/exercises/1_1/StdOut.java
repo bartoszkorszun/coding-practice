@@ -70,6 +70,7 @@
      private static final Locale LOCALE = Locale.US;
  
      // send output here
+     @SuppressWarnings("FieldMayBeFinal")
      private static PrintWriter out;
  
      // this is called before invoking any methods
